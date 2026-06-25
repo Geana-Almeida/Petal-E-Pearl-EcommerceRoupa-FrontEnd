@@ -6,9 +6,9 @@
     --text: #1f2937;
     --muted: #64748b;
     --border: #d1d5db;
-    --primary: #3f7d3e;
-    --primary-strong: #2f6a31;
-    --accent: #556b2f;
+    --primary: #63af62;
+    --primary-strong: #6eb670;
+    --accent: #b9d48b;
     --accent-soft: #ecf5eb;
     --shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
     --radius: 24px;
@@ -31,7 +31,7 @@ html {
 
 body {
     min-height: 100vh;
-    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     color: var(--text);
     background: var(--bg);
     line-height: 1.6;
@@ -95,6 +95,7 @@ input:focus-visible {
     font-weight: 700;
     letter-spacing: 0.18em;
     text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
 }
 
 h1,
@@ -102,6 +103,7 @@ h2,
 h3,
 h4 {
     color: var(--text);
+    font-family: 'Playfair Display', serif;
 }
 
 h1 {
@@ -129,6 +131,8 @@ p {
     border-radius: 999px;
     padding: 0.95rem 1.5rem;
     transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 
 .btn-primary {
@@ -202,10 +206,15 @@ p {
     transform: translateX(0);
 }
 
+.main-nav.active img{
+    width: 30px;
+}
+
 .actions {
     display: none;
     gap: 1rem;
 }
+
 
 .icon-btn {
     width: 48px;
@@ -259,6 +268,7 @@ p {
     border-radius: 16px;
     transition: all 0.2s ease;
     position: relative;
+    font-family: 'Poppins', sans-serif;
 }
 
 .nav-list a:hover {
@@ -306,6 +316,7 @@ p {
     transition: all 0.2s ease;
     border: none;
     cursor: pointer;
+    font-family: 'Poppins', sans-serif;
 }
 
 .nav-action-btn:nth-child(1) {
@@ -640,6 +651,7 @@ p {
 .link-secondary {
     color: var(--accent);
     font-weight: 700;
+    font-family: 'Poppins', sans-serif;
 }
 
 .sr-only {
@@ -769,6 +781,10 @@ p {
 
     .nav-actions {
         display: none;
+    }
+
+    .icon-btn img{
+        width: 20px;
     }
 
     .menu-toggle,
