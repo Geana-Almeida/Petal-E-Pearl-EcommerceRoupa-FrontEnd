@@ -81,7 +81,7 @@ Petal-Pearl/
 │
 ├── index.html
 │
-└── readme
+└── readme.md
 ```
 
 ---
