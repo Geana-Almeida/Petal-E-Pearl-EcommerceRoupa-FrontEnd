@@ -9,483 +9,384 @@
 </head>
 
 <body>
+  <div class="page-wrapper">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#" class="logo" aria-label="Ir para a página inicial">
+          <img src="assets/logo.png" alt="Petal & Pearl - fashion e lifestyle">
+        </a>
+
+        <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="main-navigation"
+          aria-label="Abrir menu">
+          <span aria-hidden="true">☰</span>
+        </button>
+
+        <nav id="main-navigation" class="main-nav" aria-label="Menu principal">
+          <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#categories">Categorias</a></li>
+            <li><a href="#offer">Ofertas</a></li>
+            <li><a href="#testimonials">Contato</a></li>
+          </ul>
+          <div class="nav-actions">
+            <button type="button" class="nav-action-btn" aria-label="Ver carrinho">
+              <span>🛒</span> Carrinho
+            </button>
+            <button type="button" class="nav-action-btn" aria-label="Abrir perfil">
+              <span>👤</span> Perfil
+            </button>
+          </div>
+        </nav>
+
+        <div class="actions" aria-label="Ações rápidas">
+          <button type="button" class="icon-btn" aria-label="Ver carrinho">🛒</button>
+          <button type="button" class="icon-btn" aria-label="Abrir perfil">👤</button>
+        </div>
 
 
-  <div class="container">
-
-    <header>
-
-
-      <div class="logo">
-        <img src="assets/logo.png" alt="logo escrito petal e pearl, fashion e lifestyle">
       </div>
 
-      <nav>
-
-        <ul>
-
-          <li><a href="#">Home</a></li>
-
-          <li><a href="#">Shop</a></li>
-
-          <li><a href="#">Categorias</a></li>
-
-          <li><a href="#">Ofertas</a></li>
-
-          <li><a href="#">Contato</a></li>
-
-        </ul>
-
-      </nav>
-
-      <div class="actions">
-
-        <button>🛒</button>
-
-        <button>👤</button>
-
-      </div>
-
+      <div class="overlay" id="overlay" hidden></div>
     </header>
 
     <main>
-
-      <section id="hero">
-
-        <div class="hero-buttons">
-
-          <button class="btn-primary">
-            Comprar Agora
-          </button>
-
-          <button class="btn-secondary">
-            Ver Promoções
-          </button>
-
-        </div>
-
+      <section id="hero" class="hero">
+        <img src="./assets/banner-Modelo.png" alt="">
       </section>
 
-      <section id="benefits">
-
-        <div class="benefit-card">
-
-          <img src="./assets/benefits/entrega.png" alt="Entrega">
-
-          <div class="benefit-text">
-
-            <h3>Entrega Grátis</h3>
-
+      <section id="benefits" class="section-benefits container">
+        <article class="benefit-card">
+          <img src="./assets/benefits/entrega.png" alt="Entrega gratuita" aria-hidden="true">
+          <div>
+            <h2>Entrega Grátis</h2>
             <p>Nas compras acima de R$100</p>
-
           </div>
+        </article>
 
-        </div>
-
-        <div class="benefit-card">
-
-          <img src="./assets/benefits/pagamento.png" alt="Pagamento">
-
-          <div class="benefit-text">
-
-            <h3>Compra Segura</h3>
-
+        <article class="benefit-card">
+          <img src="./assets/benefits/pagamento.png" alt="Pagamento seguro" aria-hidden="true">
+          <div>
+            <h2>Compra Segura</h2>
             <p>100% pagamento seguro</p>
-
           </div>
+        </article>
 
-        </div>
-
-        <div class="benefit-card">
-
-          <img src="./assets/benefits/reembolso.png" alt="Reembolso">
-
-          <div class="benefit-text">
-
-            <h3>Reembolso</h3>
-
+        <article class="benefit-card">
+          <img src="./assets/benefits/reembolso.png" alt="Reembolso" aria-hidden="true">
+          <div>
+            <h2>Reembolso</h2>
             <p>30 dias para devolução</p>
-
           </div>
+        </article>
 
-        </div>
-
-        <div class="benefit-card">
-
-          <img src="./assets/benefits/suporte.png" alt="Suporte">
-
-          <div class="benefit-text">
-
-            <h3>Suporte 24h</h3>
-
+        <article class="benefit-card">
+          <img src="./assets/benefits/suporte.png" alt="Suporte 24 horas" aria-hidden="true">
+          <div>
+            <h2>Suporte 24h</h2>
             <p>Atendimento especializado</p>
-
           </div>
-
-        </div>
-
+        </article>
       </section>
 
-      <section id="categories">
-
-        <div class="category-list">
-
-          <h2>Categorias</h2>
-
-          <a href="#">
-            Ver Todas →
-          </a>
-
+      <section id="categories" class="section container">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Coleções</p>
+            <h2>Categorias</h2>
+          </div>
+          <a href="#" class="link-secondary">Ver todas →</a>
         </div>
 
         <div class="categories-container">
-
-          <div class="card">
-
+          <article class="card">
             <div class="card-image blue">
-              <img src="./assets/categorias/fone-ouvido.webp" alt="Eletrônicos">
+              <img src="./assets/categorias/fone-ouvido.webp" alt="Fone de ouvido" />
             </div>
-
             <a href="#">Eletrônicos</a>
+          </article>
 
-          </div>
-
-          <div class="card">
-
+          <article class="card">
             <div class="card-image pink">
-              <img src="./assets/categorias/roupa.png" alt="Eletrônicos">
+              <img src="./assets/categorias/roupa.png" alt="Moda" />
             </div>
-
             <a href="#">Moda</a>
+          </article>
 
-          </div>
-
-          <div class="card">
-
+          <article class="card">
             <div class="card-image beige">
-              <img src="./assets/categorias/beleza.png" alt="Eletrônicos">
+              <img src="./assets/categorias/beleza.png" alt="Beleza" />
             </div>
-
             <a href="#">Beleza</a>
+          </article>
 
-          </div>
-
-          <div class="card">
-
+          <article class="card">
             <div class="card-image purple">
-              <img src="./assets/categorias/esporte.png" alt="Eletrônicos">
+              <img src="./assets/categorias/esporte.png" alt="Esporte" />
             </div>
-
             <a href="#">Esporte</a>
+          </article>
 
-          </div>
-
-          <div class="card">
-
+          <article class="card">
             <div class="card-image green">
-              <img src="./assets/categorias/acessorio.png" alt="Eletrônicos">
+              <img src="./assets/categorias/acessorio.png" alt="Acessório" />
             </div>
-
             <a href="#">Acessórios</a>
-
-          </div>
-
+          </article>
         </div>
-
       </section>
 
-      <section id="products">
-
-        <div class="products-header">
-
-          <h2>Produtos em Destaque</h2>
-
-          <a href="#">
-            Ver Todos →
-          </a>
-
-        </div>
-
-        <div class="products-grid">
-
-          <div class="product-card">
-
-            <div class="product-image">
-              <img src="./assets/best-seller/jaqueta.png" alt="Jaqueta">
-            </div>
-
-            <span class="product-category">
-              Moda
-            </span>
-
-            <h3>
-              Jaqueta Urban
-            </h3>
-
-            <div class="product-rating">
-              ★★★★★
-            </div>
-
-            <p class="price">
-              R$ 249,90
-            </p>
-
-            <button class="add-cart">
-              Adicionar
-            </button>
-
-          </div>
-
-          <div class="product-card">
-
-            <div class="product-image">
-              <img src="./assets/best-seller/jaqueta.png" alt="Tênis">
-            </div>
-
-            <span class="product-category">
-              Calçados
-            </span>
-
-            <h3>
-              Tênis Premium
-            </h3>
-
-            <div class="product-rating">
-              ★★★★★
-            </div>
-
-            <p class="price">
-              R$ 399,90
-            </p>
-
-            <button class="add-cart">
-              Adicionar
-            </button>
-
-          </div>
-
-          <div class="product-card">
-
-            <div class="product-image">
-              <img src="./assets/best-seller/jaqueta.png" alt="Relógio">
-            </div>
-
-            <span class="product-category">
-              Relógios
-            </span>
-
-            <h3>
-              Relógio Classic
-            </h3>
-
-            <div class="product-rating">
-              ★★★★★
-            </div>
-
-            <p class="price">
-              R$ 299,90
-            </p>
-
-            <button class="add-cart">
-              Adicionar
-            </button>
-
-          </div>
-
-          <div class="product-card">
-
-            <div class="product-image">
-              <img src="./assets/best-seller/jaqueta.png" alt="Bolsa">
-            </div>
-
-            <span class="product-category">
-              Acessórios
-            </span>
-
-            <h3>
-              Bolsa Elegance
-            </h3>
-
-            <div class="product-rating">
-              ★★★★★
-            </div>
-
-            <p class="price">
-              R$ 189,90
-            </p>
-
-            <button class="add-cart">
-              Adicionar
-            </button>
-
-          </div>
-
-        </div>
-
-      </section>
-
-      <section id="offer">
-        <img src="assets/banner-offer.png" alt="Banner black friday borcelle peças com até 60% de desconto">
-      </section>
-
-      <section id="testimonials">
-
+      <section id="products" class="section container">
         <div class="section-header">
-
-          <h2>O Que Nossos Clientes Dizem</h2>
-
-          <a href="#">
-            Ver Todos →
-          </a>
-
+          <div>
+            <p class="eyebrow">Seleção premium</p>
+            <h2>Produtos em destaque</h2>
+          </div>
+          <a href="#" class="link-secondary">Ver todos →</a>
         </div>
 
-        <div class="testimonial-container">
+        <div class="carousel-wrapper" id="productsCarouselWrapper">
+          <div class="products-grid" id="productsCarousel">
+            <article class="product-card">
+              <div class="product-image">
+                <img src="./assets/best-seller/jaqueta.png" alt="Jaqueta Urban" />
+              </div>
+              <span class="product-category">Moda</span>
+              <h3>Jaqueta Urban</h3>
+              <p class="product-rating">★★★★★</p>
+              <p class="price">R$ 249,90</p>
+              <button class="btn btn-ghost" type="button">Adicionar</button>
+            </article>
 
-          <div class="testimonial-card">
+            <article class="product-card">
+              <div class="product-image">
+                <img src="./assets/best-seller/jaqueta.png" alt="Tênis Premium" />
+              </div>
+              <span class="product-category">Calçados</span>
+              <h3>Tênis Premium</h3>
+              <p class="product-rating">★★★★★</p>
+              <p class="price">R$ 399,90</p>
+              <button class="btn btn-ghost" type="button">Adicionar</button>
+            </article>
 
-            <div class="testimonial-avatar">
-              <img src="./assets/testimonial/avatar1.jpg" alt="Cliente">
-            </div>
+            <article class="product-card">
+              <div class="product-image">
+                <img src="./assets/best-seller/jaqueta.png" alt="Relógio Classic" />
+              </div>
+              <span class="product-category">Relógios</span>
+              <h3>Relógio Classic</h3>
+              <p class="product-rating">★★★★★</p>
+              <p class="price">R$ 299,90</p>
+              <button class="btn btn-ghost" type="button">Adicionar</button>
+            </article>
 
-            <div class="stars">
-              ★★★★★
-            </div>
+            <article class="product-card">
+              <div class="product-image">
+                <img src="./assets/best-seller/jaqueta.png" alt="Bolsa Elegance" />
+              </div>
+              <span class="product-category">Acessórios</span>
+              <h3>Bolsa Elegance</h3>
+              <p class="product-rating">★★★★★</p>
+              <p class="price">R$ 189,90</p>
+              <button class="btn btn-ghost" type="button">Adicionar</button>
+            </article>
 
-            <p>
-              Excelente qualidade e entrega muito rápida.
-              Com certeza comprarei novamente.
-            </p>
+            <article class="product-card">
+              <div class="product-image">
+                <img src="./assets/best-seller/jaqueta.png" alt="Mochila Smart" />
+              </div>
+              <span class="product-category">Moda</span>
+              <h3>Mochila Smart</h3>
+              <p class="product-rating">★★★★★</p>
+              <p class="price">R$ 179,90</p>
+              <button class="btn btn-ghost" type="button">Adicionar</button>
+            </article>
 
-            <h4>Maria Silva</h4>
-
-            <span>Cliente Verificada</span>
-
+            <article class="product-card">
+              <div class="product-image">
+                <img src="./assets/best-seller/jaqueta.png" alt="Óculos Trend" />
+              </div>
+              <span class="product-category">Acessórios</span>
+              <h3>Óculos Trend</h3>
+              <p class="product-rating">★★★★★</p>
+              <p class="price">R$ 149,90</p>
+              <button class="btn btn-ghost" type="button">Adicionar</button>
+            </article>
           </div>
-
-          <div class="testimonial-card">
-
-            <div class="testimonial-avatar">
-              <img src="./assets/testimonial/avatar2.jpg" alt="Cliente">
-            </div>
-
-            <div class="stars">
-              ★★★★★
-            </div>
-
-            <p>
-              Os produtos chegaram exatamente como
-              nas fotos. Recomendo.
-            </p>
-
-            <h4>João Pereira</h4>
-
-            <span>Cliente Verificado</span>
-
-          </div>
-
-          <div class="testimonial-card">
-
-            <div class="testimonial-avatar">
-              <img src="./assets/testimonial/avatar3.jpg" alt="Cliente">
-            </div>
-
-            <div class="stars">
-              ★★★★★
-            </div>
-
-            <p>
-              Atendimento excelente e produtos
-              de ótima qualidade.
-            </p>
-
-            <h4>Ana Costa</h4>
-
-            <span>Cliente Verificada</span>
-
-          </div>
-
         </div>
-
       </section>
 
+      <section id="offer" class="section container">
+        <img src="assets/banner-offer.png" alt="Banner de oferta com desconto" />
+      </section>
+
+      <section id="testimonials" class="section container">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Depoimentos</p>
+            <h2>O que nossos clientes dizem</h2>
+          </div>
+          <a href="#" class="link-secondary">Ver todos →</a>
+        </div>
+
+        <div class="carousel-wrapper" id="testimonialCarouselWrapper">
+          <div class="testimonial-container" id="testimonialCarousel">
+            <article class="testimonial-card">
+              <div class="testimonial-avatar">
+                <img src="./assets/testimonial/avatar1.jpg" alt="Foto de Maria Silva" />
+              </div>
+              <p class="stars" aria-label="Avaliação cinco estrelas">★★★★★</p>
+              <p>Excelente qualidade e entrega muito rápida. Com certeza comprarei novamente.</p>
+              <h3>Maria Silva</h3>
+              <span>Cliente verificada</span>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="testimonial-avatar">
+                <img src="./assets/testimonial/avatar2.jpg" alt="Foto de João Pereira" />
+              </div>
+              <p class="stars" aria-label="Avaliação cinco estrelas">★★★★★</p>
+              <p>Os produtos chegaram exatamente como nas fotos. Recomendo.</p>
+              <h3>João Pereira</h3>
+              <span>Cliente verificado</span>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="testimonial-avatar">
+                <img src="./assets/testimonial/avatar3.jpg" alt="Foto de Ana Costa" />
+              </div>
+              <p class="stars" aria-label="Avaliação cinco estrelas">★★★★★</p>
+              <p>Atendimento excelente e produtos de ótima qualidade.</p>
+              <h3>Ana Costa</h3>
+              <span>Cliente verificada</span>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="testimonial-avatar">
+                <img src="./assets/testimonial/avatar1.jpg" alt="Foto de Pedro Santos" />
+              </div>
+              <p class="stars" aria-label="Avaliação cinco estrelas">★★★★★</p>
+              <p>Muito bom! Voltei a comprar vários produtos. Excelente atendimento!</p>
+              <h3>Pedro Santos</h3>
+              <span>Cliente verificado</span>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="testimonial-avatar">
+                <img src="./assets/testimonial/avatar2.jpg" alt="Foto de Beatriz Lima" />
+              </div>
+              <p class="stars" aria-label="Avaliação cinco estrelas">★★★★★</p>
+              <p>Adorei a experiência de compra! Recomendo para todos os amigos.</p>
+              <h3>Beatriz Lima</h3>
+              <span>Cliente verificada</span>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="testimonial-avatar">
+                <img src="./assets/testimonial/avatar3.jpg" alt="Foto de Carlos Mendes" />
+              </div>
+              <p class="stars" aria-label="Avaliação cinco estrelas">★★★★★</p>
+              <p>Entrega rápida, produto conforme anunciado. Muito satisfeito!</p>
+              <h3>Carlos Mendes</h3>
+              <span>Cliente verificado</span>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
-
-
-
   </div>
 
-  <footer>
-
-    <div class="footer-container">
-
+  <footer class="site-footer">
+    <div class="container footer-container">
       <div class="footer-column">
-
-        <img src="assets/logo.png" alt="logo escrito petal e pearl, fashion e lifestyle">
-
-        <p>
-          Seu estilo, nossa essência.
-          Vista-se de confiança todos os dias.
-        </p>
-
+        <img src="assets/logo.png" alt="Petal & Pearl logo" />
+        <p>Seu estilo, nossa essência. Vista-se de confiança todos os dias.</p>
         <div class="social-icons">
-
-          <a href="#"><img src="./assets/rede-social/facebook.png" alt="Icone facebook"></a>
-
-          <a href="#"><img src="./assets/rede-social/instagram.png" alt="Icone facebook"></a>
-
-          <a href="#"><img src="./assets/rede-social/twitter.png" alt="Icone facebook"></a>
-
+          <a href="#" aria-label="Facebook"><img src="./assets/rede-social/facebook.png" alt="Facebook" /></a>
+          <a href="#" aria-label="Instagram"><img src="./assets/rede-social/instagram.png" alt="Instagram" /></a>
+          <a href="#" aria-label="Twitter"><img src="./assets/rede-social/twitter.png" alt="Twitter" /></a>
         </div>
-
       </div>
-
       <div class="footer-column">
-
         <h3>Empresa</h3>
-
-        <a href="#">Sobre Nós</a>
-
+        <a href="#">Sobre nós</a>
         <a href="#">Produtos</a>
-
         <a href="#">Blog</a>
-
         <a href="#">Carreiras</a>
-
       </div>
-
       <div class="footer-column">
-
         <h3>Suporte</h3>
-
-        <a href="#">Central de Ajuda</a>
-
+        <a href="#">Central de ajuda</a>
         <a href="#">Contato</a>
-
         <a href="#">FAQ</a>
-
-        <a href="#">Política de Privacidade</a>
-
+        <a href="#">Política de privacidade</a>
       </div>
-
       <div class="footer-column">
-
         <h3>Newsletter</h3>
-
-        <label>
-          Receba ofertas exclusivas
-        </label>
-
-        <input type="email" placeholder="Digite seu e-mail">
-
-        <button>
-          Inscrever-se
-        </button>
-
+        <label for="newsletter-email" class="sr-only">Receba ofertas exclusivas</label>
+        <input id="newsletter-email" type="email" placeholder="Digite seu e-mail" aria-label="Digite seu e-mail" />
+        <button class="btn btn-primary" type="button">Inscrever-se</button>
       </div>
     </div>
   </footer>
 
+  <script>
+    const menu = document.getElementById('main-navigation');
+    const overlay = document.getElementById('overlay');
+    const toggle = document.getElementById('menuToggle');
+
+    toggle.addEventListener('click', () => {
+      const active = !menu.classList.contains('active');
+      menu.classList.toggle('active', active);
+      overlay.classList.toggle('active', active);
+      toggle.setAttribute('aria-expanded', String(active));
+      overlay.hidden = !active;
+    });
+
+    overlay.addEventListener('click', closeMenu);
+    document.querySelectorAll('#main-navigation a').forEach((link) => link.addEventListener('click', closeMenu));
+
+    function closeMenu() {
+      menu.classList.remove('active');
+      overlay.classList.remove('active');
+      toggle.setAttribute('aria-expanded', 'false');
+      overlay.hidden = true;
+    }
+
+    // Carrossel automático
+    function initCarousel(wrapperId, interval = 5000) {
+      const wrapper = document.getElementById(wrapperId);
+      const carousel = wrapper.querySelector('.products-grid, .testimonial-container');
+
+      if (!wrapper || !carousel) return;
+
+      const cards = carousel.querySelectorAll('.product-card, .testimonial-card');
+      if (cards.length <= 1) return;
+
+      const cardWidth = cards[0].offsetWidth + 16; // incluir gap
+      let currentIndex = 0;
+
+      function scrollToNext() {
+        currentIndex++;
+        const scrollPosition = currentIndex * cardWidth;
+
+        // Se chegou ao final, volta ao início
+        if (scrollPosition >= carousel.scrollWidth - wrapper.clientWidth) {
+          currentIndex = 0;
+          wrapper.scrollLeft = 0;
+        } else {
+          wrapper.scrollLeft = scrollPosition;
+        }
+      }
+
+      // Iniciar o auto-play
+      setInterval(scrollToNext, interval);
+    }
+
+    // Inicializar carrosséis
+    initCarousel('productsCarouselWrapper', 5000);
+    initCarousel('testimonialCarouselWrapper', 5000);
+  </script>
 </body>
 
 </html>
